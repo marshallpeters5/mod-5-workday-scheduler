@@ -1,6 +1,4 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// $(function(){}); ensures that all items in the DOM will be loaded before this function fires
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -8,7 +6,7 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  //
+  $('.saveBtn').click
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -21,3 +19,16 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+// Checks DayJS to see the current day of the week and greets the user accordingly.
+var currentDay = dayjs().format('MMMM D, YYYY')
+$('#currentDay').text("Today is: " + currentDay);
+
+var weekDay = dayjs().format('dddd')
+$('#week-day').text("It's going to be a lovely " + weekDay + ".");
+if (weekDay == 'Saturday' || 'Sunday') {
+$('#weekEnd').text("Have a wonderful weekend!")
+} else {
+$('#weekEnd').text("Have a productive work week!")
+}
