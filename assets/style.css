@@ -2,15 +2,24 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
-
+h1{
+  padding: 10px;
+}
 textarea {
+  display: flex;
+  align-items: center;
   cursor: default;
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border: 1px solid black;
   padding: 10px;
+  border-radius: 15px;
+}
+#footer {
+  text-align: center;
+  margin-top: 20px;
 }
 #time17 {
  border-bottom: 1px solid black;
@@ -22,49 +31,49 @@ textarea {
   white-space: pre-wrap;
   border-top: 1px solid black;
 }
-
-.time-block {
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border: 1px solid black;
   border-radius: 15px;
+  margin-left: auto;
+  margin-right: 5px;
 }
-
 .schedulingTable {
   display: flex;
   flex-direction: column;
 }
-
 .row {
   border-top: 1px solid white;
 }
-
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #F1DDDF;
+  color: #A94064;
   border-top: 1px solid #000000;
 }
-
 .past {
-  background-color: #d3d3d3;
+  background-color: #C8B88A;
   color: white;
 }
-
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: #DEE2FC;
+  color: #525B88;
 }
-
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: #DFF5CE;
+  color: #86B049;
 }
-
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  margin-left: 5px;
+  margin-right: auto;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #525B88;
   color: white;
 }
-
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
