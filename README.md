@@ -34,4 +34,4 @@ Matthew Calimbas, J.K. Royston and all of the other TA's and mentors/tutors at A
 
 ## Lisence
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT License](https://choosealicense.com/licenses/mit/)
