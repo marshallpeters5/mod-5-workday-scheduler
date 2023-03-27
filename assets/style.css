@@ -4,6 +4,7 @@ body {
 }
 
 textarea {
+  cursor: default;
   background: transparent;
   border: none;
   resize: none;
@@ -20,7 +21,12 @@ textarea {
   border-radius: 15px;
 }
 
-.row {
+.schedulingTable {
+  display: flex;
+  flex-direction: column;
+}
+
+row {
   border-top: 1px solid white;
 }
 
