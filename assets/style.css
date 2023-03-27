@@ -1,11 +1,10 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Cinzel', sans-serif;
   font-size: 16px;
 }
 header {
-  background: rgb(241,221,223);
-  background: linear-gradient(180deg, rgba(241,221,223,1) 0%, rgba(71,105,48,1) 100%);
-  color: white;
+  background-color: #DEE2FC;
+  color: #525B88;
 }
 h1{
   padding: 10px;
@@ -19,12 +18,15 @@ textarea {
   resize: none;
   color: #000000;
   border: 1px solid black;
-  padding: 10px;
+  padding-top: 10px;
   border-radius: 15px;
 }
 #footer {
+  padding: 10px;
   text-align: center;
   margin-top: 20px;
+  font-family: 'Pacifico', sans-serif;
+  font-size: small;
 }
 #time17 {
  border-bottom: 1px solid black;
@@ -71,9 +73,10 @@ textarea {
   color: #86B049;
 }
 .saveBtn {
+  margin: auto;
   margin-left: 5px;
-  margin-right: auto;
-  width: 100px;
+  width: 60px;
+  height: 40px;
   border: 1px solid black;
   border-radius: 15px;
   background-color: #525B88;
@@ -82,4 +85,7 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+.row{
+  padding: 2px;
 }
