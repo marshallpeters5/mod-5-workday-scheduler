@@ -29,7 +29,7 @@ $('#currentDay').text("Today is: " + currentDay);
 
 var weekDay = dayjs().format('dddd')
 $('#week-day').text("It's going to be a lovely " + weekDay + " ❤");
-if (weekDay == 'Saturday' || 'Sunday') {
+if (weekDay === 'Saturday' || weekDay === 'Sunday') {
 $('#weekEnd').text("Have a wonderful weekend!")
 } else {
 $('#weekEnd').text("Have a productive work week!")
