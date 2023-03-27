@@ -2,6 +2,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
+header {
+  background: rgb(241,221,223);
+  background: linear-gradient(180deg, rgba(241,221,223,1) 0%, rgba(71,105,48,1) 100%);
+  color: white;
+}
 h1{
   padding: 10px;
 }
